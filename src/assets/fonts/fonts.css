@@ -1,0 +1,19 @@
+@font-face{
+    font-family: 'digital';
+    src: url('digital-7-4.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'douyu-light';
+    src: url('douyu_light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'date';
+    src: url('date.otf');
+    font-weight: normal;
+    font-style: normal;
+}

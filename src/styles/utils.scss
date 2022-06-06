@@ -1,0 +1,69 @@
+
+@use "sass:math"; //math函数，https://sass-lang.com/documentation/breaking-changes/slash-div
+
+$bodyBg:#cdcdcd;
+$slideBarWidth:280px;
+$titleColor:blue;
+
+$designWidth:5200;
+$designHeight:1976;
+
+  //这里宽高参考PSD设计稿 ；我这里宽为1920px，高为1080px为例，所以这里 计算vw时除以1920，计算vh时除以1080；以便在使用时，不用去计算倍数， PSD设计稿中的尺寸是多少，我们样式就是多少！！！
+  /* 
+  案例：一个class为title的div，宽100px, 高300px
+  
+  .title {
+	  width: vw(100);
+	  height: vh(300);
+  }
+  200/3840
+	200/1920
+  */
+
+@function vw($px) {
+  @return math.div($px , $designWidth) * 100vw;
+	// @return $px * 1px;
+}
+
+
+@function vh($px) {
+  @return math.div($px , $designHeight) * 100vh;
+  //@return $px * 1px;
+}
+
+@function px2font($px) {
+  @return math.div($px , $designWidth) * 100vw;
+  // @return $px * 1px;
+}
+
+
+//滚动条样式
+@mixin scrollBarStyle() {
+	&::-webkit-scrollbar {
+		width: 4px;
+		height: 4px;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		-webkit-box-shadow: inset 0 0 5px #9b9ba3;
+		background: rgba(152, 155, 163, 0.2);
+	}
+}
+
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content
+  }
+}
+
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+
+//https://blog.csdn.net/ww_5211314/article/details/109614511
+:export {
+  bodyBg:$bodyBg;
+  slideBarWidth:$slideBarWidth;
+  titleColor:$titleColor;
+}

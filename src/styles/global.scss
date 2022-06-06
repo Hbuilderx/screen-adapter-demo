@@ -1,0 +1,24 @@
+
+
+
+.global-div{
+	width: vw(300);
+	height: vw(200);
+	background-color: rgba(7, 25, 49, 1);
+}
+
+.DinMedium{
+	font-family: DinMedium;
+	src: url('./DIN-Medium.otf');
+}
+
+
+.temp-btn {
+  background-color: rgba(10, 26, 50,  .8);
+  height: vh(32);
+  border-radius: vh(4);
+  outline: 0;
+  border: 0;
+  color: #FFFFFF;
+  text-align: center;
+}

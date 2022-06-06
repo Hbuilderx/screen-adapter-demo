@@ -1,0 +1,38 @@
+{
+  "name": "chongqing-building-pc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "bus-front": "^0.5.29",
+    "core-js": "^3.6.5",
+    "echarts": "^5.1.2",
+    "element-resize-detector": "^1.2.3",
+    "element-ui": "^2.15.5",
+    "highcharts": "^9.3.2",
+    "lodash": "^4.17.21",
+    "pubsub-js": "^1.9.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "mockjs": "^1.1.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
